@@ -6,10 +6,6 @@ This is a basic connect 4 game I decided to do for a side-project during my free
 <b>How To Play</b>
 <br>
 To play, first you will need to download a package called pygame, which you can do by following the instructions from this <a href="https://www.pygame.org/wiki/GettingStarted">webpage</a>. If you've already got it/done this, then you will need to put all the files into a folder. Now, you need to  navigate to the directory you created, using whatever command line you are using (e.g. command prompt with windows) and run main.py from there.
-<br>
-OR
-<br>
-Just download the exe folder and run main.exe. 
 
 <b>Art</b>
 <br>
