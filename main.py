@@ -28,14 +28,14 @@ pygame.display.set_caption('Connect Four')
 
 
 # Icon & images & sound 
-icon_img = pygame.image.load('icon.png')
+icon_img = pygame.image.load('Assets/icon.png')
 icon = pygame.display.set_icon(icon_img)
-grid_box = pygame.image.load('grid-box-2.png').convert_alpha()
+grid_box = pygame.image.load('Assets/grid-box-2.png').convert_alpha()
 grid_box = pygame.transform.scale(grid_box, (grid_size, grid_size))
-highlighted_grid_box = pygame.image.load('grid-box-1.png').convert_alpha()
+highlighted_grid_box = pygame.image.load('Assets/grid-box-1.png').convert_alpha()
 highlighted_grid_box = pygame.transform.scale(highlighted_grid_box, (grid_size, grid_size))
-drop_sound = pygame.mixer.Sound('token-drop.mp3')
-music = pygame.mixer.music.load('background.mp3')
+drop_sound = pygame.mixer.Sound('Assets/token-drop.mp3')
+music = pygame.mixer.music.load('Assets/background.mp3')
 
 # In-game clock
 clock = pygame.time.Clock()
@@ -102,17 +102,12 @@ def menu():
         screen.fill(colours.WHITE)
         mes = "Click anywhere on the screen to play a friend!"
         mes_array = [char for char in mes]
-        if len(mes_array) > 30:
-            for l in range(len(mes_array)-1, -1, -1):
-                if l < 40:
-                    if mes_array[l] == " ":
-                        mes_1 = mes_array[:l]
-                        mes_2 = mes_array[l:]
-                        break
+        mes_1 = mes_array[:29]
+        mes_2 = mes_array[29:]
         mes_1 = "".join(mes_1)
         mes_2 = "".join(mes_2)
-        draw_text(mes_1, "Segoe UI", 35, colours.BLACK, half_display_width, half_display_height - 30)
-        draw_text(mes_2, "Segoe UI", 35, colours.BLACK, half_display_width, half_display_height + 30)
+        draw_text(mes_1, "Segoe UI", 35, colours.BLACK, half_display_width, half_display_height - 40)
+        draw_text(mes_2, "Segoe UI", 35, colours.BLACK, half_display_width, half_display_height + 20)
 
         pygame.display.flip()
 
