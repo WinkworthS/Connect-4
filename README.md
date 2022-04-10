@@ -1,5 +1,5 @@
 # Connect-4
-This is a basic connect 4 game I decided to work on during my free time this week. I wanted this to be a small project so I have only spent up to a week on it.
+This is a basic connect 4 game I decided to work on during my free time this week. I decided I wanted this to be a small project so I have only spent up to a week on it.
 
 To play, first you will need to download a package called pygame, which you can do by following the instructions from this <a href="https://www.pygame.org/wiki/GettingStarted">webpage</a>. If you've already got it/done this, then you will need to put all the files into a folder. Now, you need to  navigate to the directory you created, using whatever command line you are using (e.g. command prompt with windows) and run main.py from there.
 
