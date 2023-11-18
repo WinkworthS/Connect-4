@@ -1,7 +1,7 @@
 # Connect-4
 <b>Overview</b>
 <br>
-This is a basic connect 4 game I decided to do for a side-project during my free time this week. I wanted this to be a small project so I have spent no more than a week on it.
+This is a basic connect 4 game I decided to make for my grandfather.
 
 <b>How To Play</b>
 <br>
